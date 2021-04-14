@@ -3,8 +3,7 @@ import CartItem from "./CartItem"
 
 export default function CartList({value}) {
     const {cart} = value;
-    console.log(cart,value)
-    
+
     return (
         <div>
             {cart.map(item => {
