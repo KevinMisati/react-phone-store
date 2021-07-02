@@ -1,7 +1,11 @@
-import React from 'react'
+import React,{useState} from 'react'
 import classes from "./Footer.module.css"
 import { YouTubeIcon, FaceBookIcon, TwitterIcon,InstagramIcon } from './Icons'
 const Footer = () => {
+    const [isOpen, setIsOpen] = useState(false)
+    const handleClick= () => {
+        setIsOpen(!isOpen)
+    }
     return (
         <div className={classes["footer-container"]}>
             <div className={classes.footer}>
@@ -15,11 +19,11 @@ const Footer = () => {
                 </div>
 
                 <div className={classes["info-container"]}>
-                    <article>
+                    <article className={classes["accordition-container-first"] }>
                             <div >
-                                <h4 >Support</h4>
+                            <h4 className={isOpen ? classes["accordition-header"] : ""} ><span>support</span> <button onClick={handleClick}>{!isOpen ? "-" : "+"}</button ></h4>
                             </div>
-                            <div>
+                            <div className={ isOpen ? classes["accordition"] : ""}>
                                 <ul >
                                     <li>
                                         <a href="/" >Help Center</a>
@@ -45,11 +49,14 @@ const Footer = () => {
                             </div>
                     </article>
 
-                    <article >
+                    <article className={classes["accordition-container"]}>
                             <div >
-                                <h4 >Offers</h4>
+                            <h4 className={classes["accordition-header"]}><span>offers</span> <button onClick={handleClick}>
+                                {!isOpen ? "-" : "+"}
+                            </button>
+                            </h4>
                             </div>
-                            <div >
+                        <div className={isOpen ? classes["accordition"] : ""}>
                                 <ul className={classes["footer-info-list"]}>
                                     <li>
                                         <a href="/" >Discount Programs</a>
@@ -73,12 +80,14 @@ const Footer = () => {
                             </div>
                     </article>
 
-                    <article>
+                    <article className={classes["accordition-container"]}>
                             <div >
-                                <h4 >About Us</h4>
+                            <h4 className={classes["accordition-header"]}><span>About us</span> <button onClick={handleClick}>
+                                {!isOpen ? "-" : "+"}
+                            </button></h4>
                             </div>
 
-                            <div >
+                        <div className={isOpen ? classes["accordition"] : ""}>
                                 <ul className={classes["footer-info-list"]}>
                                     <li>
                                         <a href="/" >About</a>
@@ -93,7 +102,7 @@ const Footer = () => {
                                         <a href="/" >Careers</a>
                                     </li>
                                 </ul>
-                            </div>
+                        </div>
                     </article>
                 </div>
 
