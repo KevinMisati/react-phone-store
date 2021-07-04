@@ -1,0 +1,29 @@
+.banner-container {
+    width: 100vw;
+    z-index: -1;
+    height: calc(50vh - 80px);
+    max-width:1148px;
+    margin: auto;
+    background: url("../Img/29118.jpg") center/cover no-repeat;
+    
+ 
+    overflow: hidden;
+}
+.banner {
+    width: calc(100% - 2rem);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.banner h2 {
+    text-transform: capitalize;
+    padding: 2rem;
+    margin: 1rem;
+    width:auto;
+    color: white;
+    background: rgba(0,0,0,.8);
+    border-radius: 4px;
+    text-align: center;
+}

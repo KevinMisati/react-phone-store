@@ -8,6 +8,7 @@
     width: 100vw;
     font-size: 0.875rem;
     overflow: hidden;
+    z-index: -100;
     /* font-family: HelveticaNeueLTPro-Roman,HelveticaNeue-Roman,"Helvetica Neue Roman","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif; */
 }
 .footer{
@@ -130,7 +131,7 @@
 }
 .info-container>article{
     border-bottom: 1px solid #2c2c2d;
-    color: green;
+    color: var(--lightBlue);
 }
 .accordition-container{
     padding: 2px 1.5px;

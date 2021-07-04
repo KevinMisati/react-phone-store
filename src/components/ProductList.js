@@ -3,6 +3,7 @@ import Product from "./Product"
 import Title from "./Title"
 import {storeProducts} from "../data"
 import { ProductConsumer } from "../Context";
+import Banner from "./Banner"
 export default class ProductList extends Component {
     state ={
         products:storeProducts
@@ -10,10 +11,12 @@ export default class ProductList extends Component {
     render() {
         
         return (
-        <React.Fragment>
+            <React.Fragment>
+                <Banner />
             <div className="py-5">
-                <div className="container">
-                    <Title name="Our" title="Products" />
+                <div style={{maxWidth:"1148px"}} className="container">
+                        <Title name="Our" title="Products" />
+                        
 
                     <div className="row">
                         <ProductConsumer>

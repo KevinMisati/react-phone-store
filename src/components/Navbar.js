@@ -9,7 +9,8 @@ import {ButtonContainer} from "./Button"
 
 const Navbar = () => {
     return (
-      <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
+      <NavWrapper className="navbar navbar-expand-sm navbar-dark py-2 px-sm-5">
+        <div className="nav-container navbar navbar-expand-sm navbar-dark px-sm-5">
         <Link to="/">
           <img src={Logo} alt="store logo" className="navbar-brand" />
         </Link>
@@ -27,7 +28,8 @@ const Navbar = () => {
             </span>
             my cart
           </ButtonContainer>
-        </Link>
+          </Link>
+        </div>
       </NavWrapper>
     );
 }
@@ -36,7 +38,18 @@ const Navbar = () => {
 export default Navbar;
     const NavWrapper = styled.nav`
     background:var(--mainDark);
+     position:sticky;
+      top:0;
+       z-index:100;
+     
+    .nav-container{
+      justify-content:space-between;
+      width:100%;
+      max-width:1148px;
+      margin:auto;
+    }
     .nav-link{
+     
         color:var(--mainWhite) !important;
         font-size:1.3rem;
         text-transform:capitalize !important;
