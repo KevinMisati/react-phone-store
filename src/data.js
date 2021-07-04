@@ -86,6 +86,55 @@ export const storeProducts = [
   },
   {
     id: 7,
+    title: "Acer Aspire Desktop",
+    img: "https://m.media-amazon.com/images/I/61A+K1MjTeL._AC_UL320_.jpg",
+    price:1299,
+    company:"Acer",
+    address:"https://www.amazon.com/Acer-TC-895-UA92-i5-10400-Processor-802-11ax/dp/B088X2YR3X/ref=sr_1_16?dchild=1&fst=as%3Aoff&pf_rd_i=16225007011&pf_rd_m=ATVPDKIKX0DER&pf_rd_p=74069509-93ef-4a3c-8dca-a9e3fa773a64&pf_rd_r=2EZCAGT819RHTPRA9B60&pf_rd_s=merchandised-search-4&pf_rd_t=101&qid=1625381787&rnid=16225007011&s=computers-intl-ship&sr=1-16",
+    info:
+      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+    inCart: false,
+    count: 0,
+    total:0,
+  }, {
+    id: 8,
+    title: "Sumsung Galaxy Tab",
+    img: "https://m.media-amazon.com/images/I/71HX44IWA7L._AC_UL320_.jpg",
+    price:149.99,
+    company:"Sumsung",
+    address: "https://www.amazon.com/Acer-TC-895-UA92-i5-10400-Processor-802-11ax/dp/B088X2YR3X/ref=sr_1_16?dchild=1&fst=as%3Aoff&pf_rd_i=16225007011&pf_rd_m=ATVPDKIKX0DER&pf_rd_p=74069509-93ef-4a3c-8dca-a9e3fa773a64&pf_rd_r=2EZCAGT819RHTPRA9B60&pf_rd_s=merchandised-search-4&pf_rd_t=101&qid=1625381787&rnid=16225007011&s=computers-intl-ship&sr=1-16",
+    info:
+      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+    inCart: false,
+    count: 0,
+    total: 0,
+  }, {
+    id: 9,
+    title: "Virtual Acoustic Earbuds",
+    img: "https://m.media-amazon.com/images/I/41k16JRKKUS._AC_UY218_.jpg",
+    price:49.99,
+    company:"Virtual Acoustic",
+    address: "https://www.amazon.com/Virtual-Acoustic-Cancelling-Transparency-Waterproof/dp/B08NXRSH38/ref=sr_1_1_sspa?dchild=1&keywords=earphones&qid=1625382490&s=pc&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzUFFDMUcwMkg2S0MyJmVuY3J5cHRlZElkPUEwNzI0MjAwMkY0NVVBQ0dOWkpDJmVuY3J5cHRlZEFkSWQ9QTA3NjAyNDhZNFUwOE1EUTBGNDImd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl",
+    info:
+      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+    inCart: false,
+    count: 0,
+    total: 0,
+  }, {
+    id: 10,
+    title: "Bluetooth Speakers",
+    img: "https://m.media-amazon.com/images/I/71XpwOsJmUL._AC_UY218_.jpg",
+    price:39.99,
+    company:"DinDin",
+    address: "",
+    info:
+      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+    inCart: false,
+    count: 0,
+    total: 0,
+  },
+  {
+    id: 11,
     title: "qunyiCO 7 Tablet",
     img: "https://m.media-amazon.com/images/I/716g2fEKYYL._AC_UL320_.jpg",
     price: 75.99,
@@ -99,7 +148,7 @@ export const storeProducts = [
     total: 0,
   },
   {
-    id: 8,
+    id: 12,
     title: "Acer Aspire 5",
     img: "https://m.media-amazon.com/images/I/71vvXGmdKWL._AC_UL320_.jpg",
     price: 439,
@@ -111,11 +160,11 @@ export const storeProducts = [
     inCart: false,
     count: 0,
     total: 0,
-  },
+  }
 ];
 
 export const detailProduct = {
-  id: 9,//changed from 1
+  id: 13,//changed from 1
   title: "Google Pixel - Black",
   img: "img/product-1.png",
   price: 10,
