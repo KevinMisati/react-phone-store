@@ -9,8 +9,8 @@ import {ButtonContainer} from "./Button"
 
 const Navbar = () => {
     return (
-      <NavWrapper className="navbar navbar-expand-sm navbar-dark py-2 px-sm-5">
-        <div className="nav-container navbar navbar-expand-sm navbar-dark px-sm-5">
+      <NavWrapper className="navbar navbar-expand-sm navbar-dark py-0 px-sm-0">
+        <div className="nav-container navbar navbar-expand-sm navbar-dark py-0 px-sm-2">
         <Link to="/">
           <img src={Logo} alt="store logo" className="navbar-brand" />
         </Link>
