@@ -3,6 +3,9 @@ import classes from "./Footer.module.css"
 import { YouTubeIcon, FaceBookIcon, TwitterIcon,InstagramIcon } from './Icons'
 const Footer = () => {
     const [isOpen, setIsOpen] = useState(false)
+    const [support,setSupport] = useState(false)
+    const [offers, setOffers] = useState(false)
+    const [aboutUs, setAboutUs] = useState(false)
     const handleClick= () => {
         setIsOpen(!isOpen)
     }
@@ -21,9 +24,9 @@ const Footer = () => {
                 <div className={classes["info-container"]}>
                     <article className={classes["accordition-container-first"] }>
                             <div >
-                            <h4 className={isOpen ? classes["accordition-header"] : ""} ><span>support</span> <button onClick={handleClick}>{!isOpen ? "-" : "+"}</button ></h4>
+                            <h4 className={classes["accordition-header"]} ><span>support</span> <button name="support" onClick={() => { setSupport(!support) }}>{!support ? "-" : "+"}</button ></h4>
                             </div>
-                            <div className={ isOpen ? classes["accordition"] : ""}>
+                            <div className={ !support ? classes["accordition"] : ""}>
                                 <ul >
                                     <li>
                                         <a href="/" >Help Center</a>
@@ -51,12 +54,14 @@ const Footer = () => {
 
                     <article className={classes["accordition-container"]}>
                             <div >
-                            <h4 className={classes["accordition-header"]}><span>offers</span> <button onClick={handleClick}>
-                                {!isOpen ? "-" : "+"}
+                            <h4 className={classes["accordition-header"]}><span>offers</span> <button name="offers" onClick={() => {
+                               setOffers(!offers)
+                            }}>
+                                {!offers ? "-" : "+"}
                             </button>
                             </h4>
                             </div>
-                        <div className={isOpen ? classes["accordition"] : ""}>
+                        <div className={!offers ? classes["accordition"] : ""}>
                                 <ul className={classes["footer-info-list"]}>
                                     <li>
                                         <a href="/" >Discount Programs</a>
@@ -82,12 +87,12 @@ const Footer = () => {
 
                     <article className={classes["accordition-container"]}>
                             <div >
-                            <h4 className={classes["accordition-header"]}><span>About us</span> <button onClick={handleClick}>
-                                {!isOpen ? "-" : "+"}
+                            <h4 className={classes["accordition-header"]}><span>About us</span> <button name="aboutUs" onClick={() => { setAboutUs(!aboutUs) }}>
+                                {!aboutUs ? "-" : "+"}
                             </button></h4>
                             </div>
 
-                        <div className={isOpen ? classes["accordition"] : ""}>
+                        <div className={!aboutUs ? classes["accordition"] : ""}>
                                 <ul className={classes["footer-info-list"]}>
                                     <li>
                                         <a href="/" >About</a>
