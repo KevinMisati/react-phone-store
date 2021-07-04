@@ -8,7 +8,7 @@ import CartTotals from "./CartTotals"
 export default class Cart extends Component {
     render() {
         return (
-            <section>
+            <section style={{minHeight:"calc(100vh - 20rem)"}}>
                 <ProductConsumer>
                     {(value) => {
                         const {cart} = value;

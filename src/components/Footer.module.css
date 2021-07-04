@@ -9,7 +9,10 @@
     font-size: 0.875rem;
     overflow: hidden;
     z-index: -100;
-    /* font-family: HelveticaNeueLTPro-Roman,HelveticaNeue-Roman,"Helvetica Neue Roman","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif; */
+    bottom:0;
+    
+    
+
 }
 .footer{
     width: 100%;
