@@ -33,7 +33,8 @@ export default class ProductList extends Component {
 
                     </div>
                 </div>
-            </div>
+                </div>
+                
         </React.Fragment>
         )
     }

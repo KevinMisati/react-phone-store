@@ -2,29 +2,50 @@ import React,{useState} from 'react'
 import classes from "./Footer.module.css"
 import { YouTubeIcon, FaceBookIcon, TwitterIcon,InstagramIcon } from './Icons'
 const Footer = () => {
-    const [isOpen, setIsOpen] = useState(false)
+
     const [support,setSupport] = useState(false)
     const [offers, setOffers] = useState(false)
     const [aboutUs, setAboutUs] = useState(false)
-    const handleClick= () => {
-        setIsOpen(!isOpen)
+
+    const handleClick = () => {
+        
+        console.log("hello")
+    }
+    const handleSupportClick = () => {
+        setSupport(() => !support)
+        console.log(support)
+       
+    }
+    const handleOffersClick = () => {
+        setOffers(!offers)
+        console.log(support)
+        console.log("hello")
+    }
+    const handleAboutClick = () => {
+        setAboutUs(!aboutUs)
+        console.log(support)
+        console.log("hello")
     }
     return (
-        <div className={classes["footer-container"]}>
+        <>
+      <div className={classes["footer-container"]}> 
+           
             <div className={classes.footer}>
                 <div className={classes.form}>
                 <h5>Hear it first</h5>
                 
                     <form action="">
                         <input placeholder="Sign Up for Emails" type="email" />
-                        <button>{">"}</button>
+                        <button onClick={() => console.log("hello")} className={classes.submit}>{">"}</button>
                     </form>
                 </div>
-
+            
                 <div className={classes["info-container"]}>
                     <article className={classes["accordition-container-first"] }>
                             <div >
-                            <h4 className={classes["accordition-header"]} ><span>support</span> <button name="support" onClick={() => { setSupport(!support) }}>{!support ? "-" : "+"}</button ></h4>
+                            <h4  className={classes["accordition-header"]} ><span>support</span><button name="offers" onClick={handleSupportClick}>
+                                {!support ? "+" : "-"}
+                            </button></h4>
                             </div>
                             <div className={ !support ? classes["accordition"] : ""}>
                                 <ul >
@@ -54,10 +75,8 @@ const Footer = () => {
 
                     <article className={classes["accordition-container"]}>
                             <div >
-                            <h4 className={classes["accordition-header"]}><span>offers</span> <button name="offers" onClick={() => {
-                               setOffers(!offers)
-                            }}>
-                                {!offers ? "-" : "+"}
+                            <h4 className={classes["accordition-header"]}><span>offers</span> <button name="offers" onClick={handleOffersClick }>
+                                {!offers ? "+" : "-"}
                             </button>
                             </h4>
                             </div>
@@ -87,8 +106,8 @@ const Footer = () => {
 
                     <article className={classes["accordition-container"]}>
                             <div >
-                            <h4 className={classes["accordition-header"]}><span>About us</span> <button name="aboutUs" onClick={() => { setAboutUs(!aboutUs) }}>
-                                {!aboutUs ? "-" : "+"}
+                            <h4 className={classes["accordition-header"]}><span>About us</span><button name="aboutUs" onClick={handleAboutClick}>
+                                {!aboutUs ? "+" : "-"}
                             </button></h4>
                             </div>
 
@@ -129,9 +148,9 @@ const Footer = () => {
             </div>
                 
                 
-            </div>
+             </div> 
             
-        
+        </>
     )
 }
 

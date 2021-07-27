@@ -30,7 +30,8 @@ body{
   font-size: 0.8rem !important;
   color:var(--mainDark);
   border-radius:0 !important;
-  border:.1rem solid var(--mainDark) !important; 
+  border:.1rem solid var(--mainDark) !important;
+  cursor: pointer;
 }
 .btn-black:hover{
   background: var(--mainDark) !important;

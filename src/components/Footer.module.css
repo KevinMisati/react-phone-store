@@ -3,16 +3,7 @@
     z-index: 99;
     color: #fff;
     background: #000;
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    font-size: 0.875rem;
-    overflow: hidden;
-    z-index: -100;
-    bottom:0;
     
-    
-
 }
 .footer{
     width: 100%;
@@ -21,25 +12,12 @@
     justify-content: space-between;
     padding: 24px;
 }
-.footer>div{
-    /* width: 33%; */
-
-}
-
 /* form */
 .footer .form {
     display: flex;
     flex-direction: column;
 }
-/* .form:after{
-    content: "";
-    position: absolute;
-    width:100% ;
-    top: 0;
-    transform: rotate(65deg);
-    border-top: 1px solid #2c2c2d;
-    left: -25%;
-} */
+
 .form h5{
     text-transform: uppercase;
      font-family: "Oswald",sans-serif ;
@@ -61,14 +39,16 @@
     border: 1px solid rgb(180, 187, 195);
     outline: none;
 }
-.footer button {
+
+.footer button{
     background: transparent;
     color: #fff;
     border: none;
     outline: none;
     font-size: 30px;
-    cursor: pointer;
+    cursor: pointer !important;
 }
+
 .footer button:focus,
 .footer button:active{
      background: transparent;
@@ -110,6 +90,10 @@
     margin: 8px;
     cursor: pointer;
 }
+.accordition-header button {
+    cursor: pointer;
+}
+
 @media screen and (max-width:780px){
     .footer-container{
         overflow: hidden;
@@ -156,6 +140,9 @@
     text-transform: uppercase;
     text-align: left;
     padding: 0 16px;
+}
+.info-container button{
+    cursor: pointer;
 }
 .accordition{
     display: none;
